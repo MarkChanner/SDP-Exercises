@@ -6,7 +6,7 @@ public class Driver {
 
         Class baCls = BankAccount.class;
         try {
-            Object myAccount = baCls.newInstance();
+            BankAccount myAccount = (BankAccount) baCls.newInstance();
             aStorage.setValue(myAccount);
 
             // Deposit
