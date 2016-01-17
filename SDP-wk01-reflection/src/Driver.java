@@ -4,9 +4,10 @@ public class Driver {
         Storage<BankAccount> aStorage = new Storage<>();
         Storage<String> sStorage = new Storage<>();
 
-        Class baCls = BankAccount.class;
+        Class<BankAccount> baCls = BankAccount.class;
+        BankAccount myAccount = null;
         try {
-            BankAccount myAccount = (BankAccount) baCls.newInstance();
+            myAccount = baCls.newInstance();
             aStorage.setValue(myAccount);
 
             // Deposit
@@ -15,6 +16,15 @@ public class Driver {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
+        }
+        //System.out.println(myAccount.getClass());
+
+        System.out.println(aStorage.getValue().showBalance());
+
+        if (aStorage.getClass() == aStorage.getClass()) {
+            System.out.println("EQUAL");
+        } else {
+            System.out.println("NOT EQUAL");
         }
 
     }
