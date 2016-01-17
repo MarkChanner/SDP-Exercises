@@ -11,7 +11,6 @@ public class HelloWorldSpring {
 
     public static void main(String[] args) throws Exception {
 
-        // get the bean factory
         BeanFactory factory = getBeanFactory();
 
         MessageRenderer mr = (MessageRenderer) factory.getBean("renderer");
@@ -22,16 +21,12 @@ public class HelloWorldSpring {
     }
 
     private static BeanFactory getBeanFactory() throws Exception {
-        // get the bean factory - understanding DefaultListableBeanFactory(0
-        // not really important.  It is just an Factory class example from
-        // Spring.
+        // Understanding DefaultListableBeanFactory not very
+        // important. It's just a Factory class example from Spring.
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
 
-        // create a definition reader
-        PropertiesBeanDefinitionReader rdr = new PropertiesBeanDefinitionReader(
-                factory);
+        PropertiesBeanDefinitionReader rdr = new PropertiesBeanDefinitionReader(factory);
 
-        // load the configuration options
         Properties props = new Properties();
         props.load(new FileInputStream("DecoupledWithSpring/src/decoupledwithspring/beans.properties"));
 
