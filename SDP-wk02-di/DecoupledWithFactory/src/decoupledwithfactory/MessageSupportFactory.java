@@ -20,10 +20,8 @@ public class MessageSupportFactory {
             String rendererClass = props.getProperty("renderer.class");
             String providerClass = props.getProperty("provider.class");
 
-            renderer = (MessageRenderer) Class.forName(rendererClass)
-                    .newInstance();
-            provider = (MessageProvider) Class.forName(providerClass)
-                    .newInstance();
+            renderer = (MessageRenderer) Class.forName(rendererClass).newInstance();
+            provider = (MessageProvider) Class.forName(providerClass).newInstance();
         } catch (Exception ex) {
             System.err.println("Failed to create factory methods");
             ex.printStackTrace();
