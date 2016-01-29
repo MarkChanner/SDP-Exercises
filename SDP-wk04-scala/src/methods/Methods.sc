@@ -19,13 +19,15 @@ assert(t2 == true)
 // Q.3
 def manyTimesString(text : String, max : Int) = {
   var result = ""
-    for (i <- 0 until max) {
-      result += text
-    }
+  for (i <- 1 to max) result += text
   result
 }
-val m1 = manyTimesString("abc", 3)
-assert("abcabcabc" == m1)
+assert("abcabcabc" == manyTimesString("abc", 3))
+assert("123123" == manyTimesString("123", 2))
+
+// Classes and Object
+// Q.1
+
 
 
 
