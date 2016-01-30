@@ -1,4 +1,8 @@
-
+/**
+  * SDP Exercises - Scala Day One (Part I)
+  *
+  * Mark Channer
+  */
 // Methods
 // Q.1
 def getSquare(value: Int) = value * value
@@ -18,11 +22,11 @@ def isArg1GreaterThanArg2(x: Double, y: Double) = x > y
 val t1 = isArg1GreaterThanArg2(4.1, 4.12)
 assert(t1 == false)
 
-val t2 =  isArg1GreaterThanArg2(2.1, 1.2)
+val t2 = isArg1GreaterThanArg2(2.1, 1.2)
 assert(t2 == true)
 
 // Q.3
-def manyTimesString(text : String, max : Int) = {
+def manyTimesString(text: String, max: Int) = {
   var result = ""
   for (i <- 1 to max) result += text
   result
