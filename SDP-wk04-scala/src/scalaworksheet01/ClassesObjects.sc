@@ -1,11 +1,91 @@
+
 /**
   * SDP Exercises - Scala Day One (Part I)
-  * Classes & Objects
   *
-  * Mark Channer
+  * @author Mark Channer
   */
 
+//Classes & Objects
 // Q.1
-// Create a Range object and print the step value.
-// Create a second Range object with a step value of
-// 2 and then print the step value. What's different?
+val r1 = Range(0, 10)
+println(r1.step)
+
+val r2 = Range(0, 10, 2)
+println(r2.step)
+// Q.2
+var s1 = "Sally"
+var s2 = "Sally"
+
+if (s1.equals(s2)) {
+  println("s1 and s2 are equal")
+} else {
+  println("s1 and s2 are not equal")
+}
+
+// Creating Classes
+// Q.1
+class Hippo
+class Lion
+class Tiger
+class Monkey
+class Giraffe
+val hippo = new Hippo
+val lion = new Lion
+val tiger = new Tiger
+val monkey = new Monkey
+val giraffe = new Giraffe
+println(hippo)
+println(lion)
+println(tiger)
+println(monkey)
+println(giraffe)
+// Q.2
+val lion2 = new Lion
+val giraffe2 = new Giraffe
+val giraffe3 = new Giraffe
+println(lion2)
+println(giraffe2)
+println(giraffe3)
+// Methods inside Classes
+// Q.1
+class Sailboat {
+  def raiseSails() = {
+    println("Sails raised")
+  }
+  def lowerSails() = {
+    println("Sails lowered")
+  }
+}
+
+class Motorboat {
+  def startMotor() = {
+    "Motor on"
+  }
+
+  def stopMotor() = {
+    "Motor off"
+  }
+}
+
+// Comparing values of types Unit and String (Sailboat methods) will always yield false
+val sailboat = new Sailboat
+val t1 = sailboat.raiseSails
+assert(t1 == "Sails raised", "Expected Sails raised, Got " + t1)
+val t2 = sailboat.lowerSails
+assert(t2 == "Sails lowered", "Expected Sails lowered, Got " + t2)
+
+// Motorboat methods return Strings rather than printing, so no problems
+val motorboat = new Motorboat
+val m1 = motorboat.startMotor
+assert(m1 == "Motor on", "Expected Motor on, Got " + m1)
+val m2 = motorboat.stopMotor
+assert(m2 == "Motor off", "Expected Motor off, Got " + m2)
+
+
+
+
+
+
+
+
+
