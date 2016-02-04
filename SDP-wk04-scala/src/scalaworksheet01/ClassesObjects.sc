@@ -1,4 +1,4 @@
-
+import com.atomicscala.AtomicTest._
 /**
   * SDP Exercises - Scala Day One (Part I)
   *
@@ -99,7 +99,6 @@ class Flare {
 val flare = new Flare
 val n1 = flare.light
 assert(n1 == "Flare used!", "Expected Flare used!, Got " + n1)
-
 // Q.3
 val sailboat2 = new Sailboat
 val signal = sailboat2.signal()
@@ -107,4 +106,28 @@ assert(signal == "Flare used!", "Expected Flare used! Got " + signal)
 val motorboat2 = new Motorboat
 val flare2 = motorboat2.signal()
 assert(flare2 == "Flare used!", "Expected Flare used! Got " + signal)
+
+// Fields in  Classes
+// Q.1
+class Cup {
+  var percentFull = 0
+  val max = 100
+  def add(increase:Int):Int = {
+    percentFull += increase
+    if(percentFull > max) {
+      percentFull = max
+    }
+    percentFull
+  }
+}
+
+val cup = new Cup
+cup.add(45) is 45
+cup.add(-15) is 30
+cup.add(-50) is -20
+
+
+
+
+
 
