@@ -55,37 +55,56 @@ class Sailboat {
   def lowerSails() = {
     println("Sails lowered")
   }
+
+  def signal() = {
+    val flare = new Flare
+    flare.light
+  }
 }
 
 class Motorboat {
+
   def startMotor() = {
     "Motor on"
   }
-
   def stopMotor() = {
     "Motor off"
+  }
+
+  def signal() = {
+    val flare = new Flare
+    flare.light
   }
 }
 
 // Comparing values of types Unit and String (Sailboat methods) will always yield false
 val sailboat = new Sailboat
 val t1 = sailboat.raiseSails
-assert(t1 == "Sails raised", "Expected Sails raised, Got " + t1)
+//assert(t1 == "Sails raised", "Expected Sails raised, Got " + t1)
 val t2 = sailboat.lowerSails
-assert(t2 == "Sails lowered", "Expected Sails lowered, Got " + t2)
-
+//assert(t2 == "Sails lowered", "Expected Sails lowered, Got " + t2)
 // Motorboat methods return Strings rather than printing, so no problems
 val motorboat = new Motorboat
 val m1 = motorboat.startMotor
 assert(m1 == "Motor on", "Expected Motor on, Got " + m1)
 val m2 = motorboat.stopMotor
 assert(m2 == "Motor off", "Expected Motor off, Got " + m2)
+// Q.2
+class Flare {
+  def light() = {
+    "Flare used!"
+  }
+}
 
+val flare = new Flare
+val n1 = flare.light
+assert(n1 == "Flare used!", "Expected Flare used!, Got " + n1)
 
-
-
-
-
-
-
+// Q.3
+val sailboat2 = new Sailboat
+val signal = sailboat2.signal()
+assert(signal == "Flare used!", "Expected Flare used! Got " + signal)
+val motorboat2 = new Motorboat
+val flare2 = motorboat2.signal()
+assert(flare2 == "Flare used!", "Expected Flare used! Got " + signal)
 
