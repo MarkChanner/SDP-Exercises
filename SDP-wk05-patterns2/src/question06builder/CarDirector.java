@@ -14,7 +14,14 @@ public class CarDirector {
     }
 
     public void build() {
-        // builder.makeEngine() etc
+        builder.makeCarType();
+        builder.makeBody();
+        builder.makeBreaks();
+        builder.makeEngine();
+        builder.makeFuelType();
+        builder.makePower();
+        builder.makeSeats();
+        builder.makeWindows();
     }
 
 }
