@@ -9,6 +9,8 @@ public class LondonErrorXMLParser implements XMLParser {
 
     @Override
     public String parse() {
-        return null;
+        String message = "London Parsing error XML...\n" +
+                "London Error XML Message";
+        return message;
     }
 }

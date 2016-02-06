@@ -10,7 +10,7 @@ public class ParserFactoryProducer {
     public static AbstractParserFactory getFactory(String factory) {
         AbstractParserFactory parserFactory = null;
         if (factory.toLowerCase().equals("nycfactory")) {
-            parserFactory = new NYParserFactory();
+            parserFactory = new NYCParserFactory();
         } else if (factory.toLowerCase().equals("londonfactory")) {
             parserFactory = new LondonParserFactory();
         }
