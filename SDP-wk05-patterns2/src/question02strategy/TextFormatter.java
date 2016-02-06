@@ -1,4 +1,4 @@
-package strategy;
+package question02strategy;
 /**
  * SDP Design Patterns II
  * Question 2 - Strategy Pattern
