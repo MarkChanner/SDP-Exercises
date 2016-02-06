@@ -9,6 +9,16 @@ public class NYParserFactory implements AbstractParserFactory {
 
     @Override
     public XMLParser getParserInstance(String parserType) {
-        return null;
+        XMLParser parser = null;
+        if (parserType.toLowerCase().equals("nycerror")) {
+            parser = new NYCErrorXMLParser();
+        } else if (parserType.toLowerCase().equals("nycfeedback")) {
+            parser = new NYCFeedbackXML();
+        } else if (parserType.toLowerCase().equals("nycorder")) {
+            parser = new NYCOrderXMLParser();
+        } else if (parserType.toLowerCase().equals("nycresponse")) {
+            parser = new NYCResponseXMLParser();
+        }
+        return parser;
     }
 }

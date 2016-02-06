@@ -9,6 +9,16 @@ public class LondonParserFactory implements AbstractParserFactory {
 
     @Override
     public XMLParser getParserInstance(String parserType) {
-        return null;
+        XMLParser parser = null;
+        if (parserType.toLowerCase().equals("londonerror")) {
+            parser = new LondonErrorXMLParser();
+        } else if (parserType.toLowerCase().equals("londonfeedback")) {
+            parser = new LondonFeedbackXMLParser();
+        } else if (parserType.toLowerCase().equals("londonorder")) {
+            parser = new LondonErrorXMLParser();
+        } else if (parserType.toLowerCase().equals("londonresponse")) {
+            parser = new LondonResponseXMLParser();
+        }
+        return parser;
     }
 }
