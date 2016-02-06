@@ -2,7 +2,7 @@ package question08facade;
 
 /**
  * SDP Design Patterns II
- * Question 8 - Builder Pattern
+ * Question 8 - Facade Pattern
  * Mark Channer
  */
 public class ScheduleServerImpl implements ScheduleServer {
