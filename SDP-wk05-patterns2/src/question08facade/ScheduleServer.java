@@ -21,13 +21,13 @@ public interface ScheduleServer {
 
     void releaseProcesses();
 
-    void destory();
+    void destroy();
 
     void destroySystemObjects();
 
-    void destoryListeners();
+    void destroyListeners();
 
-    void destoryContext();
+    void destroyContext();
 
     void shutdown();
 
