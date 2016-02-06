@@ -9,6 +9,8 @@ public class NYCOrderXMLParser implements XMLParser {
 
     @Override
     public String parse() {
-        return null;
+        String message = "NYC Parsing order XML...\n" +
+                "NYC Order XML Message";
+        return message;
     }
 }
