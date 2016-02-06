@@ -8,7 +8,13 @@ package abstractfactory;
 public class ParserFactoryProducer {
 
     public static AbstractParserFactory getFactory(String factory) {
-        return null;
+        AbstractParserFactory parserFactory = null;
+        if (factory.toLowerCase().equals("nycfactory")) {
+            parserFactory = new NYParserFactory();
+        } else if (factory.toLowerCase().equals("londonfactory")) {
+            parserFactory = new LondonParserFactory();
+        }
+        return parserFactory;
     }
 
 }
