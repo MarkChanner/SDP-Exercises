@@ -7,27 +7,38 @@ package question12composite;
  */
 public class HtmlElement extends HtmlTag {
 
-    public HtmlElement(String s) {
+    String tagName;
+    String startTag;
+    String endTag;
+    String body;
 
+    public HtmlElement(String tagName) {
+        this.tagName = tagName;
     }
 
     @Override
     public String getTagName() {
-        return null;
+        return tagName;
     }
 
     @Override
     public void setStartTag(String tag) {
-
+        startTag = tag;
     }
 
     @Override
     public void setEndTag(String tag) {
+        endTag = tag;
+    }
 
+    @Override
+    public void setTagBody(String tagBody) {
+        body = tagBody;
     }
 
     @Override
     public void generateHtml() {
-
+        System.out.print(startTag + body);
+        System.out.println(endTag);
     }
 }
