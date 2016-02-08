@@ -1,4 +1,5 @@
-import com.atomicscala.AtomicTest._
+import atomicscala.AtomicTest._
+
 /**
   * SDP Exercises - Scala Day One (Part I)
   *
