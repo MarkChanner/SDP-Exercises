@@ -13,11 +13,31 @@ class Cup {
     }
     percentFull
   }
+
+  def set(percent: Int) = {
+    percentFull = percent
+  }
+
+  def get() = {
+    percentFull
+  }
 }
 
 object AtomicFrameWorkTest extends App {
   val cup = new Cup
   cup.add (45) is 45
-  cup.add (-15) is 30
-  cup.add (-50) is -20
+  // Produces errors
+  //cup.add (-55) is 0
+  //cup.add(10) is 10
+  //cup.add (-9) is 1
+  //cup.add(-2) is 0
+
+  // Produces error
+  //cup.percentFull = 56
+  //cup.percentFull is 56
+
+  val cup2 = new Cup
+  cup2.set(56)
+  cup2.get() is 56
+
 }
