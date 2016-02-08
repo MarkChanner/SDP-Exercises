@@ -38,7 +38,8 @@ public class HtmlElement extends HtmlTag {
 
     @Override
     public void generateHtml() {
-        System.out.print(startTag + body);
+        System.out.print(startTag);
+        if (body != null) System.out.print(body);
         System.out.println(endTag);
     }
 }
