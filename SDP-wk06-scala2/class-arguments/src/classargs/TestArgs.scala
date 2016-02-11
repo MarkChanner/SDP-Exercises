@@ -7,11 +7,8 @@ import atomicscala.AtomicTest._
   * Class Arguments Q.3 - Q.5
   * Mark Channer
   */
-
 class Family(val members: String*) {
-
   def familySize() = members.size
-
 }
 
 class FlexibleFamily(val mum: String, val dad: String, val children: String*) {
@@ -39,6 +36,7 @@ object TestArgs extends App {
     }
     result
   }
+
   squareThem(2) is 4
   squareThem(2, 4) is 20
   squareThem(1, 2, 4) is 21
