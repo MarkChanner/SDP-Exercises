@@ -4,8 +4,9 @@ import atomicscala.AtomicTest._
 
 /**
   * SDP Scala Exercises Week 6
-  * Pattern Matching Q.1
+  * Pattern Matching Q.1 - 2
   * Mark Channer
+  * Vectors part of Scala package - import not required
   */
 
 object MyForecastTest extends App {
@@ -25,5 +26,11 @@ object MyForecastTest extends App {
       case 0 => "Cloudy"
       case _ => "Unknown"
     }
+  }
+
+  // Q.2
+  val sunnyData = Vector(100, 80, 50, 20, 0, 15)
+  for (v <- sunnyData) {
+    println(forecast(v))
   }
 }
