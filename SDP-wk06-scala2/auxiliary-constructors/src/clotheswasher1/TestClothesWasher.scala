@@ -4,7 +4,7 @@ import atomicscala.AtomicTest._
 
 /**
   * SDP Scala Exercises Week 6
-  * Auxiliary Constructors Q.12
+  * Auxiliary Constructors Q.12 - 14
   * Mark Channer
   *
   * Auxiliary Constructor = Overloaded Constructor
