@@ -31,6 +31,10 @@ object TestExplicits extends App {
     values.toList
   }
 
+  def explicitSet(values: Vector[Double]): Set[Double] = {
+    values.toSet
+  }
+
   inferred('a', 'b', 'c') is "Vector(a, b, c)"
   explicit('a', 'b', 'c') is "Vector(a, b, c)"
 
@@ -40,5 +44,10 @@ object TestExplicits extends App {
   // Q.18
   explicitList(Vector(10.0, 20.0)) is List(10.0, 20.0)
   explicitList(Vector(1, 2, 3)) is List(1.0, 2.0, 3.0)
+
+  // Q.19
+  explicitSet(Vector(10.0, 20.0, 10.0)) is Set(10.0, 20.0)
+  explicitSet(Vector(1, 2, 3, 2, 3, 4)) is Set(1.0, 2.0, 3.0, 4.0)
+
 
 }
