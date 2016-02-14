@@ -6,6 +6,8 @@ import atomicscala.AtomicTest._
   * SDP Scala Exercises Week 6
   * Parameterised Types Q.17-19
   * Mark Channer
+  *
+  * Use toList method for converting collection types
   */
 object TestExplicits extends App {
 
