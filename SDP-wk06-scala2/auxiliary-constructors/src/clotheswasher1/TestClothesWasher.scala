@@ -4,7 +4,7 @@ import atomicscala.AtomicTest._
 
 /**
   * SDP Scala Exercises Week 6
-  * Auxiliary Constructors Q.12 - 14
+  * Auxiliary Constructors Q.12
   * Mark Channer
   *
   * Auxiliary Constructor = Overloaded Constructor
@@ -20,7 +20,10 @@ class ClothesWasher(val modelName: String, val capacity: Double) {
   }
 }
 
+class ClothesWasher2(val modelName: String = "", val capacity: Double = 0)
+
 object TestClothesWasher extends App {
+  // Question 12
   val defaultWasher = new ClothesWasher("Hitachi", 5.0)
   defaultWasher.modelName is "Hitachi"
   defaultWasher.capacity is 5.0
