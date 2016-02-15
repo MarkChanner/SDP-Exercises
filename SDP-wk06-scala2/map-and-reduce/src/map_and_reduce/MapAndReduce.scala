@@ -11,4 +11,12 @@ object MapAndReduce extends App {
   // Q.24
   val v = Vector(1, 2, 3, 4)
   v.map(n => n * 11 + 10) is Vector(21, 32, 43, 54)
+
+  // Q.25
+  // You cannot use foreach to replace the usage of map in the
+  // solution to Q.24 because, whereas map returns a value,
+  // foreach does not
+  //val v2 = v.foreach(n => n * 11 + 10) is Vector(21, 32, 43, 54)
+
+
 }
