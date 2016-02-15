@@ -18,5 +18,14 @@ object MapAndReduce extends App {
   // foreach does not
   //val v2 = v.foreach(n => n * 11 + 10) is Vector(21, 32, 43, 54)
 
+  // Q.26
+  val result = for (value <- v) yield value * 11 + 10
+  result is Vector(21, 32, 43, 54)
+
+  // Q.27
+  v.map(n => n + 1) is Vector(2, 3, 4, 5)
+  val result2 = for (n <- v) yield n + 1
+  result2 is Vector(2, 3, 4, 5)
+
 
 }
