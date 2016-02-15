@@ -4,7 +4,7 @@ import atomicscala.AtomicTest._
 
 /**
   * SDP Scala Exercises Week 6
-  * Map and Reducde  Q.24-29
+  * Map and Reduce  Q.24-29
   * Mark Channer
   */
 object MapAndReduce extends App {
