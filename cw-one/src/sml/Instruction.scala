@@ -1,8 +1,13 @@
 package sml
 
 /**
-  * Created by Mark on 15/02/2016.
+  * This class is the supertype for machine instructions
+  *
+  * @author someone
   */
-class Instruction {
+abstract class Instruction(label: String, opcode: String) {
 
+  override def toString(): String = label + ": " + opcode
+
+  def execute(m: Machine): Unit
 }
