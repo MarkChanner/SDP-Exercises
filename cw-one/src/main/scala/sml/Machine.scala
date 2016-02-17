@@ -2,9 +2,14 @@ package sml
 
 /**
   * The machine language interpreter
+  *
+  * @author Mark Channer
+  *
   */
 case class Machine(labels: Labels, prog: Vector[Instruction]) {
+
   private final val NUMBEROFREGISTERS = 32
+
   // The registers of the SML machine
   val regs: Registers = new Registers(NUMBEROFREGISTERS)
 
@@ -13,7 +18,7 @@ case class Machine(labels: Labels, prog: Vector[Instruction]) {
   }
 
   // Execute the program in prog, beginning at instruction 0.
-  // Precondition: the program and its labels have been store properly.
+  // Precondition: the program and its labels have been stored properly.
   def execute(start: Int) =
     start.until(prog.length).foreach(x => prog(x) execute this)
 }
