@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SDP-wk07-scala3.iml" filepath="$PROJECT_DIR$/SDP-wk07-scala3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/map-and-reduce/map-and-reduce.iml" filepath="$PROJECT_DIR$/map-and-reduce/map-and-reduce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/traits-and-inheritance/traits-and-inheritance.iml" filepath="$PROJECT_DIR$/traits-and-inheritance/traits-and-inheritance.iml" />
     </modules>
   </component>
 </project>
