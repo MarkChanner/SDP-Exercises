@@ -12,6 +12,8 @@ sealed trait Colour {
   def green: Int
 
   def blue: Int
+
+  def isDark: Boolean = (red + green + blue / 3) > 400 // not very accurate, but hey
 }
 
 case object Red extends Colour {
@@ -32,10 +34,15 @@ case object Pink extends Colour {
   val blue = 203
 }
 
-final case class CustomColour(red: Int, green: Int, blue: Int) extends Colour {
+final case class CustomColour(red: Int, green: Int, blue: Int) extends Colour
 
+object main extends App {
+  val red: Colour = Red
+  assert(red.isDark)
+  val yellow: Colour = Yellow
+  assert(!yellow.isDark)
+  val pink: Colour = Pink
+  assert(pink.isDark)
+  val blue: Colour = CustomColour(0,0,255)
+  assert(!blue.isDark)
 }
-
-
-
-
