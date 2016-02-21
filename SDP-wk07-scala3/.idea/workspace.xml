@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f250f73c-63b4-45a1-89a9-31a4b38eed44" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/traits-and-inheritance/src/question5e/ColouredShapes.scala" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/traits-and-inheritance/src/question05a/Shapes.scala" afterPath="$PROJECT_DIR$/traits-and-inheritance/src/question5a/Shapes.scala" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/traits-and-inheritance/src/question05b/RefactoredShapes.scala" afterPath="$PROJECT_DIR$/traits-and-inheritance/src/question5b/RefactoredShapes.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/traits-and-inheritance/src/question5d/Colour.scala" afterPath="$PROJECT_DIR$/traits-and-inheritance/src/question5d/Colour.scala" />
     </list>
     <ignored path="SDP-wk07-scala3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,17 +28,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Colour.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question5d/Colour.scala">
+      <file leaf-file-name="ColouredShapes.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question5e/ColouredShapes.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2614841">
-              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shapes.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question5a/Shapes.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RefactoredShapes.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question5b/RefactoredShapes.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.40823328">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -54,9 +83,10 @@
         <option value="$PROJECT_DIR$/traits-and-inheritance/src/question05/Shapes.scala" />
         <option value="$PROJECT_DIR$/traits-and-inheritance/src/question05a/RefactoredShapes.scala" />
         <option value="$PROJECT_DIR$/traits-and-inheritance/src/question05a/Shapes.scala" />
+        <option value="$PROJECT_DIR$/traits-and-inheritance/src/question5d/Colour.scala" />
         <option value="$PROJECT_DIR$/traits-and-inheritance/src/question05b/RefactoredShapes.scala" />
         <option value="$PROJECT_DIR$/traits-and-inheritance/src/question5c/SealedShape.scala" />
-        <option value="$PROJECT_DIR$/traits-and-inheritance/src/question5d/Colour.scala" />
+        <option value="$PROJECT_DIR$/traits-and-inheritance/src/question5e/ColouredShapes.scala" />
       </list>
     </option>
   </component>
@@ -73,10 +103,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="y" value="1" />
-    <option name="width" value="764" />
-    <option name="height" value="727" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -155,8 +185,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="question5d" />
+              <option name="myItemId" value="question5e" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ColouredShapes.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -706,7 +740,7 @@
       <option name="number" value="Default" />
       <updated>1456009632107</updated>
       <workItem from="1456009644331" duration="1979000" />
-      <workItem from="1456062879172" duration="16511000" />
+      <workItem from="1456062879172" duration="17362000" />
     </task>
     <task id="LOCAL-00001" summary="Adds map-and-reduce module from week 6">
       <created>1456011436565</created>
@@ -786,15 +820,27 @@
       <option name="project" value="LOCAL" />
       <updated>1456080067619</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Finishes  5d(iv)">
+      <created>1456081143965</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1456081143965</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Finishes  5d(iv)">
+      <created>1456081572566</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1456081572566</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18490000" />
+    <option name="totallyTimeSpent" value="19341000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="1" width="764" height="727" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -807,7 +853,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5252525" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25567323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25037822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3441755" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -837,7 +883,8 @@
     <MESSAGE value="Finishes question 5d(i)" />
     <MESSAGE value="Finishes  5d(ii) and amends 5d(i)" />
     <MESSAGE value="Finishes  5d(iii)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finishes  5d(iii)" />
+    <MESSAGE value="Finishes  5d(iv)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishes  5d(iv)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -880,34 +927,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question05b/RefactoredShapes.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27031803">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question05a/Shapes.scala">
+    <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question5d/Colour.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question5c/SealedShape.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.81646657">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question5d/Colour.scala">
+    <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question5e/ColouredShapes.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2614841">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question5a/Shapes.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question5b/RefactoredShapes.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40823328">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
         </state>
       </provider>

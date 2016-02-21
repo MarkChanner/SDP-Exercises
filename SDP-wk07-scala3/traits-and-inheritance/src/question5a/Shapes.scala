@@ -1,4 +1,4 @@
-package question05a
+package question5a
 
 /**
   * SDP Scala Exercises Week 7
