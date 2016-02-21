@@ -39,8 +39,8 @@
       <file leaf-file-name="RefactoredShapes.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question05b/RefactoredShapes.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8922261">
-              <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.27031803">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -714,7 +714,7 @@
       <option name="number" value="Default" />
       <updated>1456009632107</updated>
       <workItem from="1456009644331" duration="1979000" />
-      <workItem from="1456062879172" duration="10014000" />
+      <workItem from="1456062879172" duration="10066000" />
     </task>
     <task id="LOCAL-00001" summary="Adds map-and-reduce module from week 6">
       <created>1456011436565</created>
@@ -746,11 +746,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456073398082</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finishes Q.5b">
+      <created>1456074111685</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1456074111685</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11993000" />
+    <option name="totallyTimeSpent" value="12045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="1" width="817" height="727" extended-state="0" />
@@ -791,7 +797,8 @@
     <MESSAGE value="Adds Shape trait with 3 abstract methods" />
     <MESSAGE value="Finishes Q.5a" />
     <MESSAGE value="Moves Q.5a into new package and creates package and file for question05b" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moves Q.5a into new package and creates package and file for question05b" />
+    <MESSAGE value="Finishes Q.5b" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishes Q.5b" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -844,8 +851,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question05b/RefactoredShapes.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8922261">
-          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.27031803">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
       </provider>
