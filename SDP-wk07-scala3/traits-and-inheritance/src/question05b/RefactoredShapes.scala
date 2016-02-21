@@ -8,19 +8,19 @@ package question05b
   *
   * @author Mark Channer
   */
-sealed trait Shape {
+trait Shape {
   def sides: Int
   def perimeter: Double
   def area: Double
 }
 
-final case class Circle(radius: Double) extends Shape {
+case class Circle(radius: Double) extends Shape {
   def sides = 1
   val perimeter = (math.Pi * 2) * radius
   val area = (math.Pi * radius) * radius
 }
 
-sealed trait Rectangular extends Shape {
+trait Rectangular extends Shape {
   def length: Double
   def height: Double
   def sides: Int = 4
@@ -28,9 +28,9 @@ sealed trait Rectangular extends Shape {
   def area = length * height
 }
 
-final case class Rectangle(length: Double, height: Double) extends Rectangular
+case class Rectangle(length: Double, height: Double) extends Rectangular
 
-final case class Square(size: Double) extends Rectangular {
+case class Square(size: Double) extends Rectangular {
   val length = size
   val height = size
 }
