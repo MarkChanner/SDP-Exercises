@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f250f73c-63b4-45a1-89a9-31a4b38eed44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/traits-and-inheritance/src/question5d/Colour.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/traits-and-inheritance/src/question5c/SealedShape.scala" afterPath="$PROJECT_DIR$/traits-and-inheritance/src/question5c/SealedShape.scala" />
     </list>
     <ignored path="SDP-wk07-scala3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -707,7 +705,7 @@
       <option name="number" value="Default" />
       <updated>1456009632107</updated>
       <workItem from="1456009644331" duration="1979000" />
-      <workItem from="1456062879172" duration="14162000" />
+      <workItem from="1456062879172" duration="14194000" />
     </task>
     <task id="LOCAL-00001" summary="Adds map-and-reduce module from week 6">
       <created>1456011436565</created>
@@ -763,11 +761,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456077995946</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finishes question 5d(i)">
+      <created>1456078808368</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1456078808368</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16141000" />
+    <option name="totallyTimeSpent" value="16173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="1" width="764" height="727" extended-state="0" />
@@ -811,7 +815,8 @@
     <MESSAGE value="Finishes Q.5b" />
     <MESSAGE value="Removes comment" />
     <MESSAGE value="Finishes question 5c" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finishes question 5c" />
+    <MESSAGE value="Finishes question 5d(i)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishes question 5d(i)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
