@@ -14,9 +14,29 @@ package question5d
   own RGB values;
 */
 sealed trait Colour {
-  def red: Double
-  def yellow: Double
-  def pink: Double
+  def red: Int
+
+  def green: Int
+
+  def blue: Int
+}
+
+final case object Red extends Colour {
+  val red = 255
+  val green = 255
+  val blue = 0
+}
+
+final case object Yellow extends Colour {
+  val red = 255
+  val green = 0
+  val blue = 0
+}
+
+final case object Pink extends Colour {
+  val red = 255
+  val green = 192
+  val blue = 203
 }
 
 
