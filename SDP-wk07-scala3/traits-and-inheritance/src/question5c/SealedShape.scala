@@ -6,17 +6,6 @@ package question5c
   *
   * @author Mark Channer
   */
-/*
-ii. Then write a singleton object called Draw with an apply method that takes
-a Shape as an argument and returns a description of it on the console.
-For example:
-Draw(Circle(10)) // returns "A circle of radius 10cm"
-Draw(Rectangle(3, 4))
-  // returns "A rectangle of width 3cm and height 4cm"
-  // and so on...
-iii. Finally, verify that the compiler complains when you comment out a case
-clause.
- */
 sealed trait Shape {
   def sides: Int
 
