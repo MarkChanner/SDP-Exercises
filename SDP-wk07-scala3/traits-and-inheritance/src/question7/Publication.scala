@@ -9,13 +9,15 @@ package question7
 
 sealed trait Publication
 
-case class Book(author: Author) extends Publication
+sealed trait Book extends Publication {
+  def author: Author
+}
 
 final case class Periodical(editor: Editor, issues: Seq[Issue]) extends Publication
 
 final case class Issue(volume: Int, issue: Int, manuscripts: Seq[Manuscript])
 
-final case class Manuscript(override val author: Author, length: Int = 5000) extends Book(author)
+final case class Manuscript(override val author: Author, length: Int = 5000) extends Book
 
 final case class Author()
 
