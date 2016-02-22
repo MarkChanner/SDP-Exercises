@@ -94,7 +94,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="1" />
-    <option name="width" value="967" />
+    <option name="width" value="842" />
     <option name="height" value="727" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -752,7 +752,7 @@
       <updated>1456009632107</updated>
       <workItem from="1456009644331" duration="1979000" />
       <workItem from="1456062879172" duration="23034000" />
-      <workItem from="1456144814356" duration="7298000" />
+      <workItem from="1456144814356" duration="7343000" />
     </task>
     <task id="LOCAL-00001" summary="Adds map-and-reduce module from week 6">
       <created>1456011436565</created>
@@ -874,14 +874,20 @@
       <option name="project" value="LOCAL" />
       <updated>1456155362589</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Finishes Q.7">
+      <created>1456155393682</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1456155393682</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32311000" />
+    <option name="totallyTimeSpent" value="32356000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1" width="967" height="727" extended-state="0" />
+    <frame x="0" y="1" width="842" height="727" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
