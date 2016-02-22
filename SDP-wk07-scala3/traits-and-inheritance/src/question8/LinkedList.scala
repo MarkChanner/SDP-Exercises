@@ -6,12 +6,12 @@ package question8
   *
   * @author Mark Channer
   *
+  * ii. a method apply that returns the nth item in the list.
+  * iii. a method contains that determines whether or not an item is in the list.
   *
-      ii. a method apply that returns the nth item in the list;
-      iii. a method contains that determines whether or not an item is in the list.
-      In each case, start by writing an abstract method definition in LinkedList.
-      Think about the types of the arguments and the types of the results. Then
-      implement the method for Empty –– it should be pretty easy to provide a default
+  * In each case, start by writing an abstract method definition in LinkedList.
+  * Think about the types of the arguments and the types of the results. Then
+  * implement the method for Empty –– it should be pretty easy to provide a default
   */
 sealed trait LinkedList[A] {
   def length: Int = {
