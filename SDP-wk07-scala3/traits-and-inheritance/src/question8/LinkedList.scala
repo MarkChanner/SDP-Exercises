@@ -20,7 +20,18 @@ sealed trait LinkedList[A] {
       case Empty() => 0
     }
   }
+
+  def apply(index: Int): A = {
+    this match {
+      case Pair(head, tail) =>
+        if (index == 0) head
+        else tail(index - 1)
+      case Empty() =>
+        throw new Exception("Cannot retrieve element from an empty list")
+    }
+  }
 }
+
 final case class Pair[A](head: A, tail: LinkedList[A]) extends LinkedList[A]
 final case class Empty[A]() extends LinkedList[A]
 
@@ -28,12 +39,14 @@ object Main extends App {
   val list = Pair(1, Pair(2, Pair(3, Empty())))
   assert(list.isInstanceOf[LinkedList[Int]])
   assert(list.head == 1)
-  //This code won't work as head and tail are not LinkedList fields
+  assert(list.length == 3)
+  //The suggested two tests below won't work as head and tail are not fields of LinkedList
   //assert(list.tail.head == 2)
   //assert(list.tail.tail == Pair(3, Empty()) as a LinkedList[Int]
-  assert(list.length == 3)
-  val list2 = Pair("One", Empty())
-  assert(list2.length == 1)
+  assert(list(0) == 1)
+  assert(list(1) == 2)
+  assert(list(2) == 3)
+
 }
 
 
