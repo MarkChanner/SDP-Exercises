@@ -39,14 +39,16 @@ sealed trait LinkedList[A] {
 }
 
 final case class Pair[A](head: A, tail: LinkedList[A]) extends LinkedList[A]
-
 final case class Empty[A]() extends LinkedList[A]
+
+final case class Pair2[A, B](one: A, two: B) // Q.8(c)
 
 object Main extends App {
   val list = Pair(1, Pair(2, Pair(3, Empty())))
   assert(list.isInstanceOf[LinkedList[Int]])
   assert(list.head == 1)
   assert(list.length == 3)
+
   //The suggested two tests below won't work as head and tail are not fields of LinkedList
   //assert(list.tail.head == 2)
   //assert(list.tail.tail == Pair(3, Empty()) as a LinkedList[Int]
@@ -59,4 +61,9 @@ object Main extends App {
   assert(list.contains(3))
   assert(!list.contains(0))
   assert(!list.contains(4))
+
+  // Q.8(c)
+  val pair = Pair2[String, Int]("h1", 2)
+  assert(pair.one == "h1")
+  assert(pair.two == 2)
 }

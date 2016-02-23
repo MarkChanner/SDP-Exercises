@@ -29,8 +29,8 @@
       <file leaf-file-name="LinkedList.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question8/LinkedList.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2915952">
-              <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
+            <state vertical-scroll-proportion="0.10806175">
+              <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -88,7 +88,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="808" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -668,7 +668,7 @@
       <workItem from="1456062879172" duration="23034000" />
       <workItem from="1456144814356" duration="16603000" />
       <workItem from="1456231947366" duration="128000" />
-      <workItem from="1456232145914" duration="1472000" />
+      <workItem from="1456232145914" duration="2230000" />
     </task>
     <task id="LOCAL-00001" summary="Adds map-and-reduce module from week 6">
       <created>1456011436565</created>
@@ -844,14 +844,20 @@
       <option name="project" value="LOCAL" />
       <updated>1456232062891</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Finishes Q.8b(iii): Adds  contains method to trait LinkedList[A]">
+      <created>1456233676249</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1456233676249</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43216000" />
+    <option name="totallyTimeSpent" value="43974000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="808" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -905,7 +911,8 @@
     <MESSAGE value="Finishes Q.8b(i): Adding length method to LinkedList[A]" />
     <MESSAGE value="Finishes Q.8b(ii): Adds apply method" />
     <MESSAGE value="Updates message returned from apply method when Exception thrown" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates message returned from apply method when Exception thrown" />
+    <MESSAGE value="Finishes Q.8b(iii): Adds  contains method to trait LinkedList[A]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishes Q.8b(iii): Adds  contains method to trait LinkedList[A]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1019,8 +1026,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question8/LinkedList.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2915952">
-          <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
+        <state vertical-scroll-proportion="0.10806175">
+          <caret line="40" column="76" selection-start-line="40" selection-start-column="76" selection-end-line="40" selection-end-column="76" />
           <folding />
         </state>
       </provider>
