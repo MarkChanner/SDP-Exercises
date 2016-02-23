@@ -6,23 +6,20 @@ package question8
   *
   * @author Mark Channer
   *
-  * iii. a method contains that determines whether or not an item is in the list.
+  *         iii. a method contains that determines whether or not an item is in the list.
   *
-  * In each case, start by writing an abstract method definition in LinkedList.
-  * Think about the types of the arguments and the types of the results. Then
-  * implement the method for Empty –– it should be pretty easy to provide a default
+  *         In each case, start by writing an abstract method definition in LinkedList.
+  *         Think about the types of the arguments and the types of the results. Then
+  *         implement the method for Empty –– it should be pretty easy to provide a default
   */
 sealed trait LinkedList[A] {
-
-
-  def length: Int = {
+  def length: Int =
     this match {
       case Pair(head, tail) => 1 + tail.length
       case Empty() => 0
     }
-  }
 
-  def apply(index: Int): A = {
+  def apply(index: Int): A =
     this match {
       case Pair(head, tail) =>
         if (index == 0) head
@@ -30,12 +27,19 @@ sealed trait LinkedList[A] {
       case Empty() =>
         throw new Exception("Bad things happened")
     }
+
+  def contains(item: A): Boolean = {
+    this match {
+      case Pair(head, tail) =>
+        if (head == item) true
+        else tail.contains(item)
+      case Empty() => false
+    }
   }
-
-
 }
 
 final case class Pair[A](head: A, tail: LinkedList[A]) extends LinkedList[A]
+
 final case class Empty[A]() extends LinkedList[A]
 
 object Main extends App {
@@ -50,6 +54,9 @@ object Main extends App {
   assert(list(1) == 2)
   assert(list(2) == 3)
 
+  assert(list.contains(1))
+  assert(list.contains(2))
+  assert(list.contains(3))
+  assert(!list.contains(0))
+  assert(!list.contains(4))
 }
-
-
