@@ -6,7 +6,6 @@ package question8
   *
   * @author Mark Channer
   *
-  * ii. a method apply that returns the nth item in the list.
   * iii. a method contains that determines whether or not an item is in the list.
   *
   * In each case, start by writing an abstract method definition in LinkedList.
@@ -14,6 +13,8 @@ package question8
   * implement the method for Empty –– it should be pretty easy to provide a default
   */
 sealed trait LinkedList[A] {
+
+
   def length: Int = {
     this match {
       case Pair(head, tail) => 1 + tail.length
@@ -27,9 +28,11 @@ sealed trait LinkedList[A] {
         if (index == 0) head
         else tail(index - 1)
       case Empty() =>
-        throw new Exception("Cannot retrieve element from an empty list")
+        throw new Exception("Bad things happened")
     }
   }
+
+
 }
 
 final case class Pair[A](head: A, tail: LinkedList[A]) extends LinkedList[A]
