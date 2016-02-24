@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f250f73c-63b4-45a1-89a9-31a4b38eed44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/traits-and-inheritance/src/question10/GenericDivisionResult.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SDP-wk07-scala3.iws" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="GenericDivisionResult.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question10/GenericDivisionResult.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26842105">
-              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.3131579">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -706,7 +705,7 @@
       <workItem from="1456144814356" duration="16603000" />
       <workItem from="1456231947366" duration="128000" />
       <workItem from="1456232145914" duration="2839000" />
-      <workItem from="1456312872931" duration="7122000" />
+      <workItem from="1456312872931" duration="7143000" />
     </task>
     <task id="LOCAL-00001" summary="Adds map-and-reduce module from week 6">
       <created>1456011436565</created>
@@ -906,11 +905,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456335921078</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Finishes Q.10">
+      <created>1456337476295</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1456337476295</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51705000" />
+    <option name="totallyTimeSpent" value="51726000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -954,7 +959,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adds map-and-reduce module from week 6" />
     <MESSAGE value="Updates comment" />
     <MESSAGE value="Adds Shape trait with 3 abstract methods" />
     <MESSAGE value="Finishes Q.5a" />
@@ -979,7 +983,8 @@
     <MESSAGE value="Finishes 8(c): Pair2 case class" />
     <MESSAGE value="Adds basic structure for Q.9" />
     <MESSAGE value="Finishes Q.9" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finishes Q.9" />
+    <MESSAGE value="Finishes Q.10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finishes Q.10" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1126,8 +1131,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question10/GenericDivisionResult.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26842105">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.3131579">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
         </state>
       </provider>
