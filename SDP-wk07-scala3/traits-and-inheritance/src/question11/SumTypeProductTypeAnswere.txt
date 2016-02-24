@@ -1,3 +1,9 @@
 11. Sum types and product types are general concepts that allow us to model almost any
 kind of data structure. We have seen two methods of writing these types, traits and
 generics — when should we consider using each?
+
+There is not a 'one size fits all' answer to which method should be used when, and it
+is often down to the individual. However, it could be generally said that you should
+consider using traits to model parts of a program that are often reused. On the other
+hand, generic data structures are more general purpose, and more appropriate for
+short pieces of code.
