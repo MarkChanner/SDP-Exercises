@@ -28,8 +28,8 @@
       <file leaf-file-name="GenericDivisionResult.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question10/GenericDivisionResult.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3131579">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.5368421">
+              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -705,7 +705,7 @@
       <workItem from="1456144814356" duration="16603000" />
       <workItem from="1456231947366" duration="128000" />
       <workItem from="1456232145914" duration="2839000" />
-      <workItem from="1456312872931" duration="7143000" />
+      <workItem from="1456312872931" duration="7191000" />
     </task>
     <task id="LOCAL-00001" summary="Adds map-and-reduce module from week 6">
       <created>1456011436565</created>
@@ -911,15 +911,21 @@
       <option name="project" value="LOCAL" />
       <updated>1456337476295</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Finishes Q.10">
+      <created>1456341614959</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1456341614959</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51726000" />
+    <option name="totallyTimeSpent" value="51774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1131,8 +1137,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/traits-and-inheritance/src/question10/GenericDivisionResult.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3131579">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.5368421">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
           <folding />
         </state>
       </provider>
