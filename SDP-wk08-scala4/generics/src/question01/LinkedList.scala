@@ -14,6 +14,15 @@ sealed trait LinkedList[A] {
       case End() => 0
     }
 
+  def apply(index: Int): A =
+    this match {
+      case Pair(head, tail) =>
+        if (index == 0) head
+        else tail(index - 1)
+      case End() =>
+        throw new Exception("Bad things happened")
+    }
+
   def contains(item: A): Boolean = {
     this match {
       case Pair(head, tail) =>
@@ -40,4 +49,15 @@ object Main extends App {
   assert(!End().contains(0))
   // This should not compile
   // example.contains("not an Int")
+
+  val example3 = Pair(1, Pair(2, Pair(3, End())))
+  assert(example3(0) == 1)
+  assert(example3(1) == 2)
+  assert(example3(2) == 3)
+  assert(try {
+    example3(3)
+    false
+  } catch {
+    case e: Exception => true
+  })
 }
