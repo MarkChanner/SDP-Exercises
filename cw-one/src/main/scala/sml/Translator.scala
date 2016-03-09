@@ -6,6 +6,8 @@ package sml
 class Translator(fileName: String) {
   private final val ADD = "add"
   private final val LIN = "lin"
+  private final val SUB = "sub"
+  private final val MUL = "mul"
 
   // word + line is the part of the current line that's not yet processed
   // word has no whitespace
@@ -28,6 +30,10 @@ class Translator(fileName: String) {
             program = program :+ AddInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
           case LIN =>
             program = program :+ LinInstruction(fields(0), fields(2).toInt, fields(3).toInt)
+          case SUB =>
+            program = program :+ SubtractInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
+          case MUL =>
+            program = program :+ AddInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
           case x =>
             println(s"Unknown instruction $x")
         }
@@ -38,7 +44,7 @@ class Translator(fileName: String) {
 }
 
 object Translator {
-  private val directory: String = "src/"
+  private val directory: String = "src/main/scala/"
 
   def apply(file: String) =
     new Translator(directory + file)
