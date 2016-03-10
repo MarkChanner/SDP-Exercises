@@ -34,6 +34,8 @@ class Translator(fileName: String) {
             program = program :+ SubtractInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
           case MUL =>
             program = program :+ AddInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
+          case DIV =>
+            program = program :+ AddInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
           case x =>
             println(s"Unknown instruction $x")
         }
