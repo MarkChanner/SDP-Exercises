@@ -1,12 +1,13 @@
 package sml
 
 /**
-  * This class ....
+  * AddInstruction extends Instruction. Mainly the same as the provided code for the coursework
+  * The only difference is AddInstruction is now a case class
   *
-  * @author someone
+  * @author Mark Channer
   */
 
-class AddInstruction(label: String, op: String, val result: Int, val op1: Int, val op2: Int)
+case class AddInstruction(label: String, op: String, val result: Int, val op1: Int, val op2: Int)
   extends Instruction(label, op) {
 
   override def execute(m: Machine) {
