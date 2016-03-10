@@ -5,22 +5,27 @@ import org.scalatest.{Matchers, FunSuite}
 /**
   * Tests LinInstruction.scala
   *
-  * The test has highlighted a problem that there is no check
-  * for if the register value entered is 31 or less
-  *
   * @author Mark Channer
   */
 class LinInstructionTest extends FunSuite with Matchers {
 
-  /*test("LinInstruction should not allow a register value above 31") {
-    val lin1 = LinInstruction("L1", 32, 66)
-    lin1.toString should not equal "L1: lin register 33 value is 66\n"
-  }*/
+  val machine = Machine(Labels(), Vector())
 
+  test("Tests LinInstruction initialization and execute method") {
+    val lin1 = LinInstruction("L1", 30, 55)
+    lin1.execute(machine)
+    lin1.toString should equal("L1: lin register 30 value is 55\n")
 
-  test("toString method should return correct label, operation, register, and value in register") {
-    val lin1 = LinInstruction("L1", 1, 66)
-    lin1.toString should equal("L1: lin register 1 value is 66\n")
+    val lin2 = LinInstruction("L2", 31, 56)
+    lin2.execute(machine)
+    lin2.toString should equal("L2: lin register 31 value is 56\n")
   }
 
+
+  test("Tests that appropriate exception thrown") {
+    an[java.lang.IndexOutOfBoundsException] should be thrownBy {
+      val lin3 = LinInstruction("L3", 32, 57)
+      lin3.execute(machine)
+    }
+  }
 }
