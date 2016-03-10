@@ -13,13 +13,13 @@ class SubtractInstructionTest extends FunSuite with Matchers {
     val machine = Machine(Labels(), Vector())
     machine.regs.update(1, 10)
     machine.regs.update(2, 10)
-    val add = SubtractInstruction("L3", 3, 1, 2)
-    add.execute(machine)
+    val subtract = SubtractInstruction("L3", 3, 1, 2)
+    subtract.execute(machine)
 
     val resultOfExecute = machine.regs(3)
     resultOfExecute should equal(0)
 
-    val resultOfToString = add.toString()
+    val resultOfToString = subtract.toString()
     resultOfToString should equal("L3: sub 1 - 2 to 3\n")
   }
 }
