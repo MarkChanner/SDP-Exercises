@@ -11,7 +11,7 @@ case class SubtractInstruction(label: String, op: String, val result: Int, val o
 
   override def execute(m: Machine) {
     val value1 = m.regs(op1)
-    val value2 = m.regs(op2)s
+    val value2 = m.regs(op2)
     m.regs(result) = value1 - value2
   }
 
