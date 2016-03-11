@@ -9,6 +9,7 @@ class Translator(fileName: String) {
   private final val SUB = "sub"
   private final val MUL = "mul"
   private final val DIV = "div"
+  private final val OUT = "out"
   // word + line is the part of the current line that's not yet processed
   // word has no whitespace
   // If word and line are not empty, line begins with whitespace
@@ -36,6 +37,8 @@ class Translator(fileName: String) {
             program = program :+ AddInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
           case DIV =>
             program = program :+ AddInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
+          case OUT =>
+            program = program :+ OutInstruction(fields(0), fields(2).toInt)
           case x =>
             println(s"Unknown instruction $x")
         }
