@@ -14,13 +14,13 @@ sealed trait LinkedList[A] {
       case End() => 0
     }
 
-  def apply(index: Int): A =
+  def apply(index: Int) =
     this match {
       case Pair(head, tail) =>
-        if (index == 0) head
-        else tail(index - 1)
+        if (index == 0) Success(head)
+        else Success(tail(index - 1))
       case End() =>
-        throw new Exception("Bad things happened")
+        Failure("Index out of bounds")
     }
 
   def contains(item: A): Boolean = {
@@ -36,6 +36,12 @@ sealed trait LinkedList[A] {
 final case class End[A]() extends LinkedList[A]
 
 final case class Pair[A](head: A, tail: LinkedList[A]) extends LinkedList[A]
+
+sealed trait Result[A]
+
+case class Success[A](result: A) extends Result[A]
+
+case class Failure[A](result: String) extends Result[A]
 
 object Main extends App {
   val example = Pair(1, Pair(2, Pair(3, End())))
@@ -60,4 +66,9 @@ object Main extends App {
   } catch {
     case e: Exception => true
   })
+
+  assert(example(0) == Success(1))
+  assert(example(1) == Success(2))
+  assert(example(2) == Success(3))
+  assert(example(3) == Failure("Index out of bounds"))
 }

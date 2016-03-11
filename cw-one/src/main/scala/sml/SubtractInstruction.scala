@@ -11,13 +11,11 @@ case class SubtractInstruction(label: String, op: String, val result: Int, val o
 
   override def execute(m: Machine) {
     val value1 = m.regs(op1)
-    val value2 = m.regs(op2)
+    val value2 = m.regs(op2)s
     m.regs(result) = value1 - value2
   }
 
-  override def toString(): String = {
-    super.toString + " " + op1 + " - " + op2 + " to " + result + "\n"
-  }
+  override def toString(): String = super.toString + " " + op1 + " - " + op2 + " to " + result + "\n"
 }
 
 object SubtractInstruction {

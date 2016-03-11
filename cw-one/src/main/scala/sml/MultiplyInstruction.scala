@@ -14,9 +14,7 @@ case class MultiplyInstruction(label: String, op: String, val result: Int, val o
     m.regs(result) = value1 * value2
   }
 
-  override def toString(): String = {
-    super.toString + " " + op1 + " * " + op2 + " to " + result  + "\n"
-  }
+  override def toString(): String = super.toString + " " + op1 + " * " + op2 + " to " + result + "\n"
 }
 
 object MultiplyInstruction {
