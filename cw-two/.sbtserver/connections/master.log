@@ -1,16 +1,19 @@
-New log file opened at Sun Mar 13 16:17:48 GMT 2016 by 4484@markspc
-Taking next connection to: 59875
-New client attempting to connect on port: 59876-59875
-  Address = /10.62.19.191:59875
-This client on port 59876 has uuid c6b9be79-0a2a-4a33-b247-fb91038f3e17 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-c6b9be79-0a2a-4a33-b247-fb91038f3e17
-Taking next connection to: 59875
+New log file opened at Sun Mar 13 17:45:26 GMT 2016 by 7228@markspc
+Taking next connection to: 60222
+New client attempting to connect on port: 60223-60222
+  Address = /10.62.19.191:60222
+This client on port 60223 has uuid f50a9e32-5cfd-491a-8660-ea3755acf07e configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-f50a9e32-5cfd-491a-8660-ea3755acf07e
+Taking next connection to: 60222
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 59875
+Taking next connection to: 60222
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 59875
+Taking next connection to: 60222
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 59875
+Taking next connection to: 60222
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 60222
