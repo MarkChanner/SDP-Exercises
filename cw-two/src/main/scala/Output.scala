@@ -20,9 +20,18 @@ You have 12 to guess the answer or you lose the game."""
 
   def begin = "Generating secret code ...."
 
-  //def queryGuess(easy: Boolean): String = ??? //What is your next guess?
-
-  //def apply(board: Board): String = ??? // Print the feedback of a round
-
-  //def end(outcome: Outcome): String = ??? // Depends on outcome of the game
+  def queryGuess(easy: Boolean, secret: SecretCode): String = {
+    val result = StringBuilder.newBuilder
+    if (easy) result.append(s"The secret code is $secret ")
+    result.append(
+      """You have 12 guesses left.
+        |What is your next guess?
+        |Type in the characters for your guess and press enter.
+        |Enter guess:""")
+    result.toString
+  }
 }
+
+//def apply(board: Board): String = ??? // Print the feedback of a round
+
+//def end(outcome: Outcome): String = ??? // Depends on outcome of the game
