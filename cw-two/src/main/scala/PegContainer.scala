@@ -8,6 +8,8 @@ trait PegContainer {
 
 case class SecretCode(pegs: Vector[Peg]) extends PegContainer
 
+case class Guess(pegs: Vector[Peg]) extends PegContainer
+
 object SecretCodeGenerator {
   val CODE_LENGTH = 4
   val PEG_COLOURS = 6
@@ -40,4 +42,4 @@ object SecretCodeGenerator {
 
 }
 
-case class Guess(pegs: Vector[Peg]) extends PegContainer
+
