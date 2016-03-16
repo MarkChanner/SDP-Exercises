@@ -18,5 +18,14 @@ class PegTest extends FunSuite with Matchers {
     white should be(White())
     white.toString should be("WHITE")
   }
+  test("testPegsConstructors") {
+    val red = Peg("R")
+    red should be(Red())
+
+    val yellow = Peg("Y")
+    yellow should be (Yellow()
+    )
+
+  }
 }
 
