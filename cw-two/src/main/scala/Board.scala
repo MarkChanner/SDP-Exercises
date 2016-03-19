@@ -1,6 +1,17 @@
-final case class Board(secretCode: SecretCode, rounds: Vector[Round]) {
-
-  def addRound(round: Round): Unit = {
-    // or return new Board with latest round added
+case class Board(rounds: Vector[Round]) {
+  override def toString() = {
+    val output = StringBuilder.newBuilder
+    rounds.map(r => output.append(r))
+    output.toString
   }
+
+}
+
+object Main extends App {
+  val guess = Guess(Vector(Red(), Red()))
+  val feedback = Feedback(Vector(Black()))
+  val round = Round(guess, feedback)
+  val round2 = Round(guess, feedback)
+  val b = Board(Vector(round, round2))
+  print(b)
 }
