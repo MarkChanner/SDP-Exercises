@@ -17,6 +17,20 @@ class RoundTest extends FunSuite with Matchers {
     val directAndIndirectMatch: Round = Round(guess3, feedback3)
     directAndIndirectMatch.toString should be("RR Result: White Black\n")
   }
+
+  test("tests analyse method") {
+    val unsolved1 = Feedback(Vector[ResultPeg]())
+    val unsolved2 = Feedback(Vector(Black(), White()))
+    val unsolved3 = Feedback(Vector(Black(), Black()))
+    val solved1 = Feedback(Vector(Black(), Black()))
+    val solved2 = Feedback(Vector(Black(), Black(), Black(), Black()))
+
+    assert(Round.analyse(unsolved1, 2) == Unsolved)
+    assert(Round.analyse(unsolved2, 2) == Unsolved)
+    assert(Round.analyse(unsolved3, 3) == Unsolved)
+    assert(Round.analyse(solved1, 2) == Solved)
+    assert(Round.analyse(solved2, 4) == Solved)
+  }
 }
 
 
