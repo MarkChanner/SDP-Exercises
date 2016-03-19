@@ -4,7 +4,7 @@ This is a text version of the classic board game Mastermind.
 The computer will think of a secret code.
 The code consists of 4 colored pegs.
 The pegs may be one of six colors: blue, green , orange, purple, red, or yellow.
-q1_2.A color may appear more than once in the code.
+q1_2A color may appear more than once in the code.
 
 You try to guess what colored pegs are in the code and what order they are in
 After making a guess the result will be displayed.
@@ -550,4 +550,3 @@ BBBB Result: No pegs
 
 You did not solve the puzzle. Too bad.
 Enter Y for another game or anything else to quit: n
-
