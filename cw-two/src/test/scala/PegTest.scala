@@ -17,10 +17,6 @@ class PegTest extends FunSuite with Matchers {
     val white: ResultPeg = White()
     white should be(White())
     white.toString should be("White")
-
-    val empty: ResultPeg = Empty()
-    empty should be(Empty())
-    empty.toString should be("")
   }
   test("testPegsConstructors") {
     val red = Peg("R")

@@ -47,8 +47,4 @@ case class White() extends ResultPeg {
   override def toString: String = "White"
 }
 
-case class Empty() extends ResultPeg {
-  override def toString: String = ""
-}
-
 
