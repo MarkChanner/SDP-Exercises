@@ -17,6 +17,8 @@ object Output {
 
   def revealSecretCode(secretCode: SecretCode): String = s"The secret code is $secretCode"
 
+  def remainingAttempts(remainingAttempts: Int): String = s"You have $remainingAttempts guesses left."
+
 //  def roundFeedback(easy: Boolean, board: Board, secretCode: SecretCode) = {
 //    val output = StringBuilder.newBuilder
 //    if (easy) output.append(s"The secret code is ${secretCode}")
