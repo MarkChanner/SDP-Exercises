@@ -1,5 +1,5 @@
 object Reader {
 
-  def apply(): String = scala.io.StdIn.readLine()
+  def getInput: String = scala.io.StdIn.readLine()
 
 }
