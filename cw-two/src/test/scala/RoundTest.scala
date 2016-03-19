@@ -5,7 +5,7 @@ class RoundTest extends FunSuite with Matchers {
     val guess1 = Guess(Vector(Red(), Red()))
     val feedback1 = Feedback(Vector[ResultPeg]())
     val empty: Round = Round(guess1, feedback1)
-    empty.toString should be("No pegs\n")
+    empty.toString should be("RR Result: No pegs\n")
 
     val guess2 = Guess(Vector(Red(), Red()))
     val feedback2 = Feedback(Vector(Black()))
