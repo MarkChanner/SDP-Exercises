@@ -4,5 +4,6 @@ case class Mastermind(easy: Boolean) extends GameAbstractImpl {
     Printer(Output.intro)
     Printer(Output.begin)
     val secretCode = SecretCodeGenerator()
+    if (easy) Printer(Output.revealSecretCode(secretCode))
   }
 }
