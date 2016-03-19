@@ -14,6 +14,6 @@ case class Mastermind(easy: Boolean) extends GameAbstractImpl {
     if (board.rounds.nonEmpty) {}
 
     Printer(Output.remainingAttempts(remainingAttempts))
-
+    Printer(Output.promptForGuess)
   }
 }
