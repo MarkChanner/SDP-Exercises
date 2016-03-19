@@ -40,11 +40,15 @@ case class Yellow() extends Peg {
 }
 
 case class Black() extends ResultPeg {
-  override def toString: String = "BLACK"
+  override def toString: String = "Black"
 }
 
 case class White() extends ResultPeg {
-  override def toString: String = "WHITE"
+  override def toString: String = "White"
+}
+
+case class Empty() extends ResultPeg {
+  override def toString: String = ""
 }
 
 
