@@ -12,11 +12,11 @@ class PegTest extends FunSuite with Matchers {
 
     val black: ResultPeg = Black()
     black should be (Black())
-    black.toString should be("BLACK")
+    black.toString should be("Black")
 
     val white: ResultPeg = White()
     white should be(White())
-    white.toString should be("WHITE")
+    white.toString should be("White")
 
     val empty: ResultPeg = Empty()
     empty should be(Empty())
