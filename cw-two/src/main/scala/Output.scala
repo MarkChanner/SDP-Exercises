@@ -13,39 +13,32 @@ object Output {
     "When entering guesses you only need to enter the first character of the color as a capital letter.\n\n" +
     "You have 12 to guess the answer or you lose the game.\n"
 
-  val begin = "Generating secret code ...."
+  val begin = "\nGenerating secret code ....\n"
 
-  def revealSecretCode(secretCode: SecretCode): String = s"The secret code is $secretCode"
+  def revealSecretCode(secretCode: SecretCode): String = s"The secret code is $secretCode\n"
 
   def remainingAttempts(remainingAttempts: Int): String = s"You have $remainingAttempts guesses left.\n"
 
-  val promptForGuess = "What is your next guess?\n" +
+  val promptForGuess = "\nWhat is your next guess?\n" +
     "Type in the characters for your guess and press enter.\n" +
     "Enter guess: "
 
   //  def roundFeedback(easy: Boolean, board: Board, secretCode: SecretCode) = {
   //    val output = StringBuilder.newBuilder
-  //    if (easy) output.append(s"The secret code is ${secretCode}")
   //    /*if (board.rounds.nonEmpty) {
   //      board.rounds(board.rounds.length - 1).analyse match {
   //        case Solved() => output.append("\n" + board.secretCode + " SecretCode\n")
   //        case Unsolved() => output.append("\n.... SecretCode\n")
   //      }
   //      board.rounds.map(r => output.append(r))
-  //      // then maybe append "...." for each round yet to be played
+  //      // then maybe append "...." for each round yet to be played?
   //    }*/
   //    output.toString
   //  }
   //
-  //  def remainingGuesses(turn: Int) = "You have " + (12 - turn) + " guesses left"
+  //  val congratulate = "You solved the puzzle! Good job." // then Mastermind calls anotherGame()
   //
-  //  val promptForGuess = "\nWhat is your next guess?\n" +
-  //    "Type in the characters for your guess and press enter.\n" +
-  //    "Enter guess: "
-  //
-  //  val congratulate = "You solved the puzzle! Good job." // then controller calls anotherGame()
-  //
-  //  val commiserate = "You did not solve the puzzle. Too bad." // then controller calls anotherGame()
+  //  val commiserate = "You did not solve the puzzle. Too bad." // then Mastermind calls anotherGame()
   //
   //  val anotherGame = "Enter Y for another game or anything else to quit: "
 }
