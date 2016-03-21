@@ -1,5 +1,22 @@
-
 sealed trait Peg
+
+sealed trait ResultPeg extends Peg {
+  override def toString = this match {
+    case Black() => "Black"
+    case White() => "White"
+  }
+}
+
+sealed trait GuessPeg extends Peg {
+  override def toString = this match {
+    case Blue() => "B"
+    case Green() => "G"
+    case Orange() => "O"
+    case Purple() => "P"
+    case Red() => "R"
+    case Yellow() => "Y"
+  }
+}
 
 object Peg {
   def apply(letter: String) = letter match {
@@ -13,38 +30,20 @@ object Peg {
   }
 }
 
-sealed trait ResultPeg
+final case class Blue() extends GuessPeg
 
-case class Blue() extends Peg {
-  override def toString: String = "B"
-}
+final case class Green() extends GuessPeg
 
-case class Green() extends Peg {
-  override def toString: String = "G"
-}
+final case class Orange() extends GuessPeg
 
-case class Orange() extends Peg {
-  override def toString: String = "O"
-}
+final case class Purple() extends GuessPeg
 
-case class Purple() extends Peg {
-  override def toString: String = "P"
-}
+final case class Red() extends GuessPeg
 
-case class Red() extends Peg {
-  override def toString: String = "R"
-}
+final case class Yellow() extends GuessPeg
 
-case class Yellow() extends Peg {
-  override def toString: String = "Y"
-}
+final case class Black() extends ResultPeg
 
-case class Black() extends ResultPeg {
-  override def toString: String = "Black"
-}
-
-case class White() extends ResultPeg {
-  override def toString: String = "White"
-}
+final case class White() extends ResultPeg
 
 
