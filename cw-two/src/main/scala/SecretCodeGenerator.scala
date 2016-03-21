@@ -5,29 +5,29 @@ object SecretCodeGenerator {
   val PEG_COLOURS = 6
 
   def apply(): SecretCode = {
-    run(Vector[Peg]())
+    run(Vector[GuessPeg]())
   }
 
-  def run(v: Vector[Peg]): SecretCode = {
-    if (v.size == CODE_LENGTH) SecretCode(v)
+  def run(pegs: Vector[GuessPeg]): SecretCode = {
+    if (pegs.size == CODE_LENGTH) SecretCode(pegs)
     else {
-      var code = v
+      var p = pegs
       Random.nextInt(PEG_COLOURS) match {
         case 0 =>
-          code = code :+ Blue()
+          p = p :+ Blue()
         case 1 =>
-          code = code :+ Green()
+          p = p :+ Green()
         case 2 =>
-          code = code :+ Orange()
+          p = p :+ Orange()
         case 3 =>
-          code = code :+ Purple()
+          p = p :+ Purple()
         case 4 =>
-          code = code :+ Red()
+          p = p :+ Red()
         case 5 =>
-          code = code :+ Yellow()
+          p = p :+ Yellow()
       }
-      run(code)
+      run(p)
     }
   }
-}
 
+}
