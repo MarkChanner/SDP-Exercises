@@ -33,5 +33,12 @@ object Output {
     output.toString
   }
 
+  def fillerRows(remainingRounds: Int) = {
+    val output = StringBuilder.newBuilder
+    for (i <- 1 until remainingRounds) output.append("....\n")
+    output.append("\n")
+    output.toString
+  }
+
   val anotherGame = "Enter Y for another game or anything else to quit: "
 }
