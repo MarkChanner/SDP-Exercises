@@ -1,5 +1,17 @@
 sealed trait Peg
 
+object Peg {
+  def apply(letter: String) = letter match {
+    case "B" => Blue()
+    case "G" => Green()
+    case "O" => Orange()
+    case "P" => Purple()
+    case "R" => Red()
+    case "Y" => Yellow()
+    case _ => "No such peg"
+  }
+}
+
 sealed trait ResultPeg extends Peg {
   override def toString = this match {
     case Black() => "Black"
@@ -15,18 +27,6 @@ sealed trait GuessPeg extends Peg {
     case Purple() => "P"
     case Red() => "R"
     case Yellow() => "Y"
-  }
-}
-
-object Peg {
-  def apply(letter: String) = letter match {
-    case "B" => Blue()
-    case "G" => Green()
-    case "O" => Orange()
-    case "P" => Purple()
-    case "R" => Red()
-    case "Y" => Yellow()
-    case _ => "No such peg"
   }
 }
 
