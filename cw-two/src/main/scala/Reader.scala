@@ -1,5 +1,8 @@
 object Reader {
 
-  def getInput: String = scala.io.StdIn.readLine()
+  def getInput: String = {
+    val input = scala.io.StdIn.readLine()
+    input
+  }
 
 }
