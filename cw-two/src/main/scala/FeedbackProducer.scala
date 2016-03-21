@@ -1,4 +1,4 @@
-import util.Random._
+import util.Random.shuffle
 
 object FeedbackProducer {
 
