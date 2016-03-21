@@ -23,22 +23,15 @@ object Output {
     "Type in the characters for your guess and press enter.\n" +
     "Enter guess: "
 
-  //  def roundFeedback(easy: Boolean, board: Board, secretCode: SecretCode) = {
-  //    val output = StringBuilder.newBuilder
-  //    /*if (board.rounds.nonEmpty) {
-  //      board.rounds(board.rounds.length - 1).analyse match {
-  //        case Solved() => output.append("\n" + board.secretCode + " SecretCode\n")
-  //        case Unsolved() => output.append("\n.... SecretCode\n")
-  //      }
-  //      board.rounds.map(r => output.append(r))
-  //      // then maybe append "...." for each round yet to be played?
-  //    }*/
-  //    output.toString
-  //  }
-  //
-  //  val congratulate = "You solved the puzzle! Good job." // then Mastermind calls anotherGame()
-  //
-  //  val commiserate = "You did not solve the puzzle. Too bad." // then Mastermind calls anotherGame()
-  //
-  //  val anotherGame = "Enter Y for another game or anything else to quit: "
+  def secretCodeUnmasked(secretCode: SecretCode) = "\n" + secretCode + " SecretCode\n"
+
+  val secretCodeMasked = "\n.... SecretCode\n"
+
+  def roundFeedback(board: Board) = {
+    val output = StringBuilder.newBuilder
+    board.rounds.map(r => output.append(r))
+    output.toString
+  }
+
+  val anotherGame = "Enter Y for another game or anything else to quit: "
 }
