@@ -39,9 +39,4 @@ class FeedbackProducerTest extends FunSuite with Matchers {
     val guess1 = Guess(Vector[GuessPeg](Blue(), Red(), Red(), Red()))
     FeedbackProducer(guess1, secretCode).toString should be("Black")
   }
-
-  test("Black Black White White") {
-    val guess1 = Guess(Vector[GuessPeg](Green(), Blue(), Blue(), Green()))
-    FeedbackProducer(guess1, secretCode).toString should be("Black Black White White")
-  }
 }
