@@ -20,7 +20,7 @@ object FeedbackProducer {
     val whitePegs: Vector[ResultPeg] = trimmedGuess.intersect(trimmedSecretCode)
       .map(x => White())
 
-    val resultPegs: Vector[ResultPeg] = Vector(blackPegs, whitePegs).flatten //shuffle(Vector(blackPegs, whitePegs).flatten)
+    val resultPegs: Vector[ResultPeg] = shuffle(Vector(blackPegs, whitePegs).flatten)
 
     Feedback(resultPegs)
   }
