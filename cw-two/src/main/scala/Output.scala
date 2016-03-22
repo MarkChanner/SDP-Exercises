@@ -33,11 +33,15 @@ object Output {
     output.toString
   }
 
-  def fillerRows(remainingRounds: Int) = {
+  def remainingRows(remainingGuesses: Int) = {
     val output = StringBuilder.newBuilder
-    for (i <- 1 until remainingRounds) output.append("....\n")
+    for (i <- 0 until remainingGuesses) output.append("....\n")
     output.append("\n")
     output.toString
+  }
+
+  def gameEnd(outcome: Outcome): String = {
+    outcome.toString
   }
 
   val anotherGame = "Enter Y for another game or anything else to quit: "
