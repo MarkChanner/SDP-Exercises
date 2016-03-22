@@ -23,7 +23,7 @@ object Output {
     "Type in the characters for your guess and press enter.\n" +
     "Enter guess: "
 
-  def secretCodeUnmasked(secretCode: SecretCode) = "\n" + secretCode + " SecretCode\n"
+  def secretCodeUnmasked(secretCode: SecretCode) = s"\n$secretCode SecretCode\n"
 
   val secretCodeMasked = "\n.... SecretCode\n"
 
